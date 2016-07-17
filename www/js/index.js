@@ -34,6 +34,8 @@ var app = {
     // function, we must explicitly call 'app.receivedEvent(...);'
     onDeviceReady: function() {
         app.receivedEvent('deviceready');
+		pictureSource=navigator.camera.PictureSourceType;
+        destinationType=navigator.camera.DestinationType;
 		 //console.log(document.getElementById('deviceready').html());
 		
     },
